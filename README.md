@@ -61,8 +61,10 @@ Digite o seguinte comando
 Descomente (apague o '#') as linhas 'Color' e 'ParallelDownloads', neste ultimo mude a quantidade de 5 para 10 (ou mais se quiser), assim o pacman ira fazer ate 10 downloads paralelos.
 Antes:
 > #Color
+
 > #ParallelDownloads = 5
 
 Depois:
 > Color
+
 > ParallelDownloads = 10
