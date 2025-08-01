@@ -5,17 +5,20 @@ Esse menu tem como objetivo ajudar nas configurações básicas do sistema, assi
 
 # Usando o menu
 Primeiro baixe o zenity (pacote usado para criar a interface gráfica)
-> sudo pacman -S zenity
+
+`sudo pacman -S zenity`
 
 Agora você deve habilitá o menu como um executável.
 
 No Gnome é só clicar com o botão direito, ir em propriedades e selecionar "Executar como programa".
 
 Também é possível ativar por terminal (é necessário estar no mesmo diretório ou indicar ele):
-> sudo chmod +x menu_akrata.sh
+
+`sudo chmod +x menu_akrata.sh`
 
 Por fim a execução pode ser dar clicando com o botão direito e escolhendo "Executar como programa" ou executar pelo terminal:
-> ./menu_akrata.sh
+
+`./menu_akrata.sh`
 
 # Ações possiveis
 ## Instalar seleção de pacotes básicos
@@ -56,16 +59,21 @@ O pacman não atualiza o systemd-boot, apenas instala ele, assim é necessário 
 # Recomentações que não estão no menu
 ## Cores no terminal e aumentar a quantidade de downloads paralelos
 Digite o seguinte comando
-> sudo nano /etc/pacman.conf
 
-Descomente (apague o '#') as linhas 'Color' e 'ParallelDownloads', neste ultimo mude a quantidade de 5 para 10 (ou mais se quiser), assim o pacman ira fazer ate 10 downloads paralelos.
+`sudo nano /etc/pacman.conf`
+
+Descomente (apague o '#') apenas as linhas 'Color' e 'ParallelDownloads', neste ultimo mude a quantidade de 5 para 10 (ou mais se quiser), assim o pacman ira fazer ate 10 downloads paralelos.
 
 Antes:
-> #Color
 
-> #ParallelDownloads = 5
+```
+#Color
+#ParallelDownloads = 5
+```
 
 Depois:
-> Color
 
-> ParallelDownloads = 10
+```
+Color
+ParallelDownloads = 10
+```
