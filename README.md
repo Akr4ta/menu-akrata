@@ -59,6 +59,7 @@ Digite o seguinte comando
 > sudo nano /etc/pacman.conf
 
 Descomente (apague o '#') as linhas 'Color' e 'ParallelDownloads', neste ultimo mude a quantidade de 5 para 10 (ou mais se quiser), assim o pacman ira fazer ate 10 downloads paralelos.
+
 Antes:
 > #Color
 
